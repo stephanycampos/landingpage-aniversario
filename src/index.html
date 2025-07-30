@@ -8,17 +8,56 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/main.scss">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="logo">
+            <img class="hero__logo" src="./images/logo_niver.png" alt="logo">
             <p class="hero__text">
                 Você foi convidado para o meu aniversário! <br>
-                Em breve: 10d 12h 20m 15s
+                Em breve: <span id="contador"></span>
             </p>
         </div>
     </header>
+    <section class="event event--comovaiser" >
+  <div class="container" data-aos="zoom-in-up">
+    <div class="event__details">
+      <h2 class="event__details__title">Como vai funcionar?</h2>
+      <p class="event__details__description">
+        Prepare-se para uma noite especial com música boa, comida deliciosa, gente querida e muita diversão! Vai ter tudo o que um aniversário incrível merece: risadas, abraços apertados e momentos inesquecíveis. Só falta você pra deixar tudo ainda mais completo!
+      </p>
+    </div>
+    <img class="event__image" src="./images/comovaiser.png" alt="como vai ser" />
+  </div>
+</section>
+
+ <section class="event event--informacao event--reverse">
+  <div class="container" data-aos="zoom-in-down">
+    <div class="event__details">
+      <h2 class="event__details__title">Quem vai estar lá</h2>
+      <p class="event__details__description">
+        Só a galera mais animada, claro! Amigos de todos os cantos, família reunida e muita gente especial pra comemorar junto. Vai ser uma mistura linda de sorrisos, histórias e abraços — tudo isso com muita música boa de fundo.
+      </p>
+    </div>
+    <img class="event__image" src="./images/localizacao.png" alt="como vai ser" />
+  </div>
+</section>
+
+ <section class="event event--localizacao">
+  <div class="container" data-aos="zoom-in-up">
+    <div class="event__details">
+      <h2 class="event__details__title">Onde vai ser?</h2>
+      <p class="event__details__description">
+        A festa vai acontecer no Espaço Aurora, um lugar super aconchegante e perfeito pra reunir quem a gente mais gosta! Fica na <strong>Rua das Estrelas, 123 — Bairro Solar, São Paulo - SP</strong>. Pode colocar no GPS e vir preparado pra curtir muito!
+      </p>
+    </div>
+    <img class="event__image" src="./images/informacao.png" alt="como vai ser" />
+  </div>
+</section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
